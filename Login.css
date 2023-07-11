@@ -7,31 +7,14 @@
 }
 
 
-/*header*/
+/*Background*/
 
-.header {
-    display: flex;
-    width: 100%;
-    height: 44.8px;
-    opacity: 1;
-    color: rgb(0, 0, 0);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    margin-top: 50px;
-}
-
-.backgr {
-    height: inherit;
+.backgr,
+.backgr>div:not(.ctn-circle) {
+    z-index: 0;
+    height: fit-content;
     width: inherit;
-    display: flex;
-    position: absolute;
-}
-
-.backgr>div {
-    height: inherit;
-    width: inherit;
-    display: flex;
+    display: inline-block;
     position: absolute;
 }
 
@@ -44,8 +27,9 @@
 }
 
 .backgr>.ctn-circle {
+    display: flex;
+    align-items: flex-end;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .circle {
@@ -58,14 +42,29 @@
 }
 
 #big {
+    translate: 200px 200px;
     height: 400px;
     width: 400px;
-    margin-right: -200px;
 }
 
 #small {
-    margin-top: 500px;
+    translate: 200px 300px;
     background: rgb(0, 255, 55);
+}
+
+
+/*header*/
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 44.8px;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 50px;
 }
 
 .header>.bar {
@@ -98,6 +97,13 @@
     padding: 0 24px;
     display: block;
     font-size: small;
+    border-radius: 25px;
+}
+
+.header>.bar>.nav>li>a:hover {
+    background: #ff3bc8;
+    color: #ffffff;
+    transition: all 0.5s;
 }
 
 .border {
@@ -127,13 +133,14 @@ html {
 }
 
 .content>.tab {
+    z-index: 2;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     width: fit-content;
     height: fit-content;
-    margin-top: -5%;
+    margin-top: 0;
 }
 
 .content>.tab>.heading>h1 {
@@ -182,6 +189,7 @@ html {
 .content>.tab>form>.textbox>input {
     width: 100%;
     height: 75%;
+    background: none;
 }
 
 .content>.tab>form>.textbox>input {
@@ -205,55 +213,7 @@ html {
     font-size: medium;
 }
 
-
-/*
-.pdt8-pdb24 {
-    padding: 8px 0 24px;
+.content>.tab>form>.button>input:hover {
+    background: linear-gradient(to right bottom, #ff00bb, #a300a9);
+    transition: all 2s;
 }
-
-.pd14 {
-    padding: 0 12px;
-}
-
-
-
-
-
-form {
-    padding: 32px 16px;
-}
-
-.input-text {
-    padding: 8px;
-    width: 90%;
-    border: 1px solid #ced4da;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-}
-
-.input-sub {
-    width: 100%;
-    margin: 16px 0;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(41, 3, 209);
-    color: #fff;
-    opacity: 0.8;
-}
-
-.input-sub:hover {
-    opacity: 1;
-}
-
-.text-center {
-    text-align: center;
-    margin-top: 16px;
-}
-
-.text-center a {
-    text-decoration: none;
-}
-
-
-/* End login */
