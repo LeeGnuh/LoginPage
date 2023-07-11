@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #565656;
+}
+
+
+/*header*/
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.header>.bar {
+    width: 100%;
+    display: inline-block;
+}
+
+.header>.bar>.logo {
+    height: 150%;
+    width: auto;
+    position: absolute;
+    left: 0;
+    margin-left: 100px;
+}
+
+.header>.bar>.nav {
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+}
+
+.header>.bar>.nav>li {
+    display: inline-block;
+}
+
+.header>.bar>.nav>li>a {
+    color: rgb(193, 193, 193);
+    text-decoration: none;
+    line-height: 40px;
+    padding: 0 24px;
+    display: block;
+    font-size: x-small;
+}
+
+.border {
+    padding: -3px 0;
+    border-radius: 25px;
+    border-color: #FFA500;
+    border-style: solid;
+}
+
+
+/*Body*/
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.content>.tab {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: -5%;
+}
+
+.content>.tab>.heading>h1 {
+    color: rgb(135, 57, 209);
+}
+
+#line {
+    height: 7px;
+    width: 100px;
+    background: linear-gradient(to top left, #FFA500, #DDA0DD, #ff00bb);
+    margin-top: 10px;
+}
+
+.content>.tab>.subtext {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.content>.tab>.subtext>p {
+    margin-bottom: 10px;
+}
+
+.content>.tab>.subtext>a {
+    color: rgb(255, 92, 157);
+    text-decoration: none;
+}
+
+.content>.tab>form {
+    width: 90%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.content>.tab>form>.textbox,
+.content>.tab>form>.button {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 75%;
+}
+
+.content>.tab>form>.textbox,
+.content>.tab>form>.textbox>input {
+    width: 100%;
+    height: 75%;
+}
+
+.content>.tab>form>.textbox>input {
+    border: none;
+    border-bottom: 2px solid purple;
+    padding: 0 15px;
+}
+
+.content>.tab>form>.button>input {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: linear-gradient(to left top, #ff00bb, #a300a9);
+    margin-top: 25px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: medium;
+}
+
+
+/*
+.pdt8-pdb24 {
+    padding: 8px 0 24px;
+}
+
+.pd14 {
+    padding: 0 12px;
+}
+
+
+
+
+
+form {
+    padding: 32px 16px;
+}
+
+.input-text {
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.input-sub {
+    width: 100%;
+    margin: 16px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(41, 3, 209);
+    color: #fff;
+    opacity: 0.8;
+}
+
+.input-sub:hover {
+    opacity: 1;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.text-center a {
+    text-decoration: none;
+}
+
+
+/* End login */
